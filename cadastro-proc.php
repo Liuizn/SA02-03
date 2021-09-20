@@ -2,9 +2,6 @@
     <h2>Insira as informações do paciente</h2>
     <form action="insert-proc.php" method="post">
 
-        <label for="codigo_procedimento">Código:</label>
-        <input type="text" name="id_procedimento" id="id_procedimento" maxlength="9" pattern="[0-9]+$" required><br><br>
-
         <label for="nome_procedimento">Nome:</label>
         <input type="text" name="nome_procedimento" id="nome_procedimento" maxlength="50" required><br><br>
 
