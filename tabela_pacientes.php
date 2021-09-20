@@ -29,7 +29,8 @@
                     <td>Telefone fixo</td>
                     <td>Telefone Secundário</td>
                     <td>Data de registro</td>
-
+                    <td>Atualizar</td>
+                    <td>Delete</td>
                 </tr>
             </thead>
             <tbody>
@@ -52,6 +53,7 @@
                 echo "<td>".$valor['fixo1']."</td>";
                 echo "<td>".$valor['fixo2']."</td>";
                 echo "<td>" . $valor['data_registro'] ."</td>";
+                echo "<td><a href='update-form.php?id_pacientes=".$valor['id_pacientes']."'>Atualizar</a></td>";
                 echo "</tr>";
             }
         ?>
