@@ -33,7 +33,9 @@
               
         <p id="data">Data de registro</p>
 
-        <button><a href="index.php">Ver pacientes</a></button> <STYLE>A {text-decoration: none; color:black} </STYLE>
+        <button><a href="tabela_pacientes.php">Ver pacientes</a></button> <STYLE>A {text-decoration: none; color:black} </STYLE>
+        <button><a href="index.php">Fechar</a></button> <STYLE>A {text-decoration: none; color:black} </STYLE>
+
         <input type="submit" value="Cadastrar">
 
         
