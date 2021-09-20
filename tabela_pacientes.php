@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clinica Estetica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <table border="1">
-        <tr>
-            <td>ID</td>
-            <td>Nome</td>
-            <td>CEP</td>
-            <td>Bairro</td>
-            <td>Rua</td>
-            <td>Nº da casa</td>
-            <td>Complemento</td>
-            <td>Email</td>
-            <td>Celular</td>
-            <td>Telefone fixo</td>
-            <td>Telefone Secundário</td>
-            <td>Data de registro</td>
 
-        </tr>
-        <?php
+<body>
+
+    <h1>Consulta Pacientes</h1>
+
+    <div class="pai-area-formulario" id="tabela">
+        <table border=1>
+            <thead>
+                <tr class="cabecalho">
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td>CEP</td>
+                    <td>Bairro</td>
+                    <td>Rua</td>
+                    <td>Nº da casa</td>
+                    <td>Complemento</td>
+                    <td>Email</td>
+                    <td>Celular</td>
+                    <td>Telefone fixo</td>
+                    <td>Telefone Secundário</td>
+                    <td>Data de registro</td>
+
+                </tr>
+            </thead>
+            <tbody>
+                <?php
             require_once 'conexao.php';
             $cmd = $con->query("SELECT * FROM pacientes ORDER BY id_pacientes asc");
             $res = $cmd->fetchAll(PDO::FETCH_ASSOC);
@@ -45,10 +55,14 @@
                 echo "</tr>";
             }
         ?>
-        
-    </table> <br><br>
-    <button> <a href="cadastrar.php">Cadastrar pacientes</a></button> <STYLE>A {text-decoration: none; color:black} </STYLE>
-    
+            </tbody>
+        </table>
+
+        <div class="group-inputs group-buttons">
+        <button id="b_medicos"><a href="cadastrar.php">Cadastrar pacientes</a></button>
+        </div>
+    </div>
+
 </body>
 
 </html>
