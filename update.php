@@ -27,6 +27,6 @@ if (isset ($_GET['id_pacientes'])){
     $cmd->bindParam(":comp",$complemento);
     $cmd->execute();
     
-    header("location: index.php");
+    header("location: tabela_pacientes.php");
 }
 ?>

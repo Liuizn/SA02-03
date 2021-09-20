@@ -54,6 +54,7 @@
                 echo "<td>".$valor['fixo2']."</td>";
                 echo "<td>" . $valor['data_registro'] ."</td>";
                 echo "<td><a href='update-form.php?id_pacientes=".$valor['id_pacientes']."'>Atualizar</a></td>";
+                echo "<td><a href='delete.php?id_pacientes=".$valor['id_pacientes']."'>Deletar</a><td>";
                 echo "</tr>";
             }
         ?>
