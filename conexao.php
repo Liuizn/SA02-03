@@ -1,5 +1,4 @@
 <?php
-
 try {
     $con = new PDO("mysql:host=localhost;dbname=agencia_estetica","root","");
     

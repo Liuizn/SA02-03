@@ -62,8 +62,6 @@
             </div>
         </div>
 
-
-
         <div class="group-inputs group-buttons">
             <button id="b_index"> <a href="index.php">Voltar ao Início</a></button>
             <button id="b_medicos"><a href="tabela_pacientes.php">Ver pacientes</a></button>
