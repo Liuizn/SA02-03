@@ -12,8 +12,8 @@
                     <tr class="cabecalho">
                         <td>ID</td>
                         <td>Nome</td>
-                        <td>Gênero</td>
                         <td>Valor (R$)</td>
+                        <td>Gênero</td>
                         <td>Data de cadastro</td>
                     </tr>
             </thead>

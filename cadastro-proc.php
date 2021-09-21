@@ -21,7 +21,7 @@
         <div class="group-inputs">
             <div class="group">
                 <label for="valor_procedimento">Valor</label>
-                <input type="text" name="valor_procedimento" id="valor_procedimento" maxlength="60" required>
+                <input type="text" name="valor_procedimento" id="valor_procedimento" maxlength="60" pattern="[0-9.]+$" required>
             </div>
             <div class="group">
                 <label for="genero">Genero:</label>
