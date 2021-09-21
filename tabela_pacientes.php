@@ -53,8 +53,8 @@
                 echo "<td>".$valor['fixo1']."</td>";
                 echo "<td>".$valor['fixo2']."</td>";
                 echo "<td>" . $valor['data_registro'] ."</td>";
-                echo "<td><a href='update-form.php?id_pacientes=".$valor['id_pacientes']."'>Atualizar</a></td>";
-                echo "<td><a href='delete.php?id_pacientes=".$valor['id_pacientes']."'>Deletar</a><td>";
+                echo "<td><a href='update-form.php?id_pacientes=".$valor['id_pacientes']."'>Editar</a></td>";
+                echo "<td><a href='delete.php?id_pacientes=".$valor['id_pacientes']."'>Excluir</a><td>";
                 echo "</tr>";
             }
         ?>
@@ -62,7 +62,7 @@
         </table>
 
         <div class="group-inputs group-buttons">
-            <button id="b_index"> <a href="index.php">Voltar ao Início</a></button>
+            <button  id="b_index"><a href="index.php">Voltar ao Início</a></button>
             <button id="b_medicos"><a href="cadastrar.php">Cadastrar pacientes</a></button>
         </div>
     </div>
