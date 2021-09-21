@@ -22,13 +22,3 @@ valor_procedimento varchar(20) not null,
 genero varchar(20),
 data_procedimento date DEFAULT CURRENT_TIMESTAMP
 );
-
-desc pacientes;
-INSERT INTO pacientes
-VALUES (default, 'carlos', 123123, 1123123123,123123123,'carlinhps@',12831823,'cam[ps','aasasjsda','123123','casinha',default);
-
-select * from pacientes;
-
-
-
-
