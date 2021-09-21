@@ -1,5 +1,5 @@
 <body>
-    <h2>Insira as informações do paciente</h2>
+    <h2>Insira as informações do procedimento</h2>
     <form action="insert-proc.php" method="post">
 
         <label for="nome_procedimento">Nome:</label>

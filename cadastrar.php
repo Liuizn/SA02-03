@@ -8,7 +8,7 @@
     <form action="insert.php" method="post" class="pai-area-formulario">
         <div class="group-inputs nome">
             <div class="group" id="nome">
-                <label for="nome">Nome:</label>
+                <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome" required maxlength="50">
             </div>
             <div class="group">
@@ -69,9 +69,6 @@
             <input type="submit" value="Cadastrar" id="b_cadastrar">
             <input type="reset" value="Limpar" id="b_limpar">
         </div>
-
-
-
 
     </form>
 

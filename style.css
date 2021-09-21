@@ -100,9 +100,9 @@ h1 {
     width: 8%;    
 }
 
-#b_medicos {background-color: #7de3ee;}
-#b_limpar {background-color: #dfdd77;}
-#b_cadastrar {background-color: #83d483;}
+#b_medicos {background-color: #88ced6;}
+#b_limpar {background-color: #e6d266;}
+#b_cadastrar {background-color: #f7ac67;}
 
 [href] {
     color: black;
