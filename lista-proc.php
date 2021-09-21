@@ -37,8 +37,8 @@
         </table>
 
         <div class="group-inputs group-buttons">
-            <button id="b_medicos"><a href="cadastro-proc.php">Cadastrar Procedimento</a></button>
             <button id="b_index"> <a href="index.php">Voltar ao Início</a></button>
+            <button id="b_medicos"><a href="cadastro-proc.php">Cadastrar Procedimento</a></button>
         </div>
 
     </div>

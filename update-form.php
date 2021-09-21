@@ -82,8 +82,8 @@ if(isset($_GET['id_pacientes']) && !empty($_GET['id_pacientes'])){
         </div>
 
         <div class="group-inputs group-buttons">
-            <input type="submit" value="Atualizar" id="b_cadastrar">
             <button id="b_medicos"><a href="tabela_pacientes.php">Ver pacientes</a></button>
+            <input type="submit" value="Atualizar" id="b_cadastrar">
         </div>
 
     </form>
