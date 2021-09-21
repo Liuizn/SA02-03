@@ -68,6 +68,7 @@
             <button id="b_medicos"><a href="tabela_pacientes.php">Ver pacientes</a></button>
             <input type="submit" value="Cadastrar" id="b_cadastrar">
             <input type="reset" value="Limpar" id="b_limpar">
+            <button id="b_index"> <a href="index.php">Voltar ao Início</a></button>
         </div>
 
     </form>
