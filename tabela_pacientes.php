@@ -29,8 +29,8 @@
                     <td>Telefone fixo</td>
                     <td>Telefone Secundário</td>
                     <td>Data de registro</td>
-                    <td>Atualizar</td>
-                    <td>Delete</td>
+                    <td>Editar</td>
+                    <td>Excluir</td>
                 </tr>
             </thead>
             <tbody>
