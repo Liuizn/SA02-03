@@ -71,9 +71,9 @@ if(isset($_GET['id_pacientes']) && !empty($_GET['id_pacientes'])){
                 <input type="tel" name="celular" id="celular" required maxlength="20" pattern="[0-9-()+ ]+$"
                     value="<?php if(isset($res)){ echo $res['celular'];}?>">
             </div>
-            <div class="group" id="fixo1"> <label for="fixo2">Telefone secundario</label>
-                <input type="text" name="fixo2" id="fixo2" maxlength="20" pattern="[0-9-()+ ]+$"
-                    value="<?php if(isset($res)){ echo $res['fixo2'];}?>">
+            <div class="group" id="fixo1"> <label for="fixo1">Telefone fixo</label>
+                <input type="text" name="fixo1" id="fixo1" maxlength="20" pattern="[0-9-()+ ]+$"
+                    value="<?php if(isset($res)){ echo $res['fixo1'];}?>">
             </div>
             <div class="group" id="fixo2"> <label for="fixo2">Telefone secundario</label>
                 <input type="text" name="fixo2" id="fixo2" maxlength="20" pattern="[0-9-()+ ]+$"
