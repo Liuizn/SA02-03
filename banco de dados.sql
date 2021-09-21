@@ -29,6 +29,6 @@ VALUES (default, 'carlos', 123123, 1123123123,123123123,'carlinhps@',12831823,'c
 
 select * from pacientes;
 
-drop database agencia_estetica;
+
 
 

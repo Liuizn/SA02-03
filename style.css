@@ -13,6 +13,10 @@ body {
 }
 
 
+#inicio {
+    margin-top: 40vh;
+}
+
 h1 {
     color: rgb(245, 245, 245);
     font-size: 40px;
@@ -98,6 +102,10 @@ h1 {
     font-size: 16px;
     padding: 10px 0px 10px 0px;
     width: 8%;    
+}
+
+.group-buttons-index {
+
 }
 
 #b_medicos {background-color: #88ced6;}
