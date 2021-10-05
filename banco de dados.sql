@@ -31,6 +31,18 @@ status_medico boolean,
 data_registro_medicos date DEFAULT CURRENT_TIMESTAMP
 );
 
+create table if not exists convenios(
+id_convenio int(6) not null auto_increment primary key,
+nome_fantasia varchar(50) not null,
+nome_empresa varchar(50) not null,
+nome_contato varchar(50) not null,
+cnpj_convenio varchar(18) not null,
+fixo1_convenio varchar(20),
+fixo2_convenio varchar(20),
+email_convenio varchar(60) not null,
+data_registro_convenios date DEFAULT CURRENT_TIMESTAMP
+);
+
 create table if not exists procedimentos(
 id_procedimento int(6) not null auto_increment primary key,
 nome_procedimento varchar(50) not null,
