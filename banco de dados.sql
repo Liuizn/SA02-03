@@ -39,6 +39,19 @@ genero varchar(20),
 data_procedimento date DEFAULT CURRENT_TIMESTAMP
 );
 
+create table if not exists convenios(
+id_convenio int(6) not null auto_increment primary key,
+nome_fantasia varchar(50) not null,
+nome_empresa varchar(50) not null,
+nome_contato varchar(50) not null,
+cnpj_convenio varchar(18) not null,
+fixo1_convenio varchar(20),
+fixo2_convenio varchar(20),
+email_convenio varchar(60) not null,
+homepage varchar(60) not null,
+data_registro_convenio date DEFAULT CURRENT_TIMESTAMP
+);
+
 # select * from pacientes;
 # select * from medicos;
 # drop database agencia_estetica;
