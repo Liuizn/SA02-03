@@ -2,6 +2,14 @@
     width: 50vw;
 }
 
+.nome-c{
+    width: 25vw !important;
+}
+
+#nomef{
+    width: 25vw;
+}
+
 #rua {
     width: 25vw;
 }

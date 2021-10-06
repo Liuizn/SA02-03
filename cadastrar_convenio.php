@@ -7,11 +7,13 @@
     <h1>Insira as informações do Convênio</h1>
     <form action="insert_convenio.php" method="post" class="pai-area-formulario">
         <div class="group-inputs nome">
-            <div class="group" id="nome">
+            <div class="group" id="nomef">
                 <label for="nomef">Nome Fantasia</label>
                 <input type="text" name="nomef" id="nomef" required maxlength="50">
-                <label for="nome">Nome da Empresa</label>
-                <input type="text" name="nome" id="nome" required maxlength="50">
+            </div>
+            <div class="group nome-c" id="nome">
+                <label for="nome">Nome Empresa</label>
+                <input class="nome-c"type="text" name="nome" id="nome" class="" required maxlength="50">
             </div>
             <div class="group">
                 <p id="data">Data de registro</p>
@@ -24,12 +26,12 @@
                 <label for="nome-contato">Nome do Contato</label>
                 <input type="text" name="nome-contato" id="nome-contato" required maxlength="60">
             </div>
-            
+
             <div class="group" id="homepage">
                 <label for="homepage">Home Page</label>
                 <input type="text" name="homepage" id="homepage" required maxlength="60">
             </div>
-            
+
             <div class="Group" id="cnpj">
                 <label for="cnpj">CNPJ</label>
                 <input type="text" name="cnpj" id="cnpj" required maxlength="50">
@@ -39,7 +41,7 @@
 
 
         <div class="group-inputs">
-            <div class="group" id="email"> 
+            <div class="group" id="email">
                 <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" maxlength="60">
             </div>

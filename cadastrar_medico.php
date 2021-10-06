@@ -12,7 +12,7 @@
                 <input type="text" name="nome" id="nome" required maxlength="50">
             </div>
 
-                <div>
+                <div class="group">
                     <label for="status">Status:</label>
 
                     <select name="status" id="status">
