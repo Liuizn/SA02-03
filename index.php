@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body >
+<body>
     <div class="pai-area-formulario" id="inicio">
         <div class="group-inputs group-buttons">
+
+            <button> <a href="cadastrar_convenio.php"> Cadastrar novo convênio</a></button>
+            <button> <a href="tabela_convenio.php"> Consultar convênio</a></button>
+
             <button> <a href="cadastrar.php"> Cadastrar novo paciente</a></button>
             <button> <a href="tabela_pacientes.php"> Consultar pacientes</a></button>
 
