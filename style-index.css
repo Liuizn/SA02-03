@@ -1,0 +1,138 @@
+.container-grid-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10% 0px;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      ". Text-area Text-area ."
+      "area-convenio area-paciente area-medico area-procedimento"
+      "area-convenio area-paciente area-medico area-procedimento";
+    height: 70vh;
+  }
+  
+  .area-convenio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50% 0px;
+    grid-auto-flow: row;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "."
+      ".";
+    justify-self: center;
+    align-self: center;
+    grid-area: area-convenio;
+    width: 90%;
+  }
+  
+  .area-paciente {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50% 0px;
+    grid-auto-flow: row;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "."
+      ".";
+    justify-self: center;
+    align-self: center;
+    grid-area: area-paciente;
+    width: 90%;
+  }
+  
+  .area-procedimento {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50% 0px;
+    grid-auto-flow: column;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "."
+      ".";
+    justify-self: center;
+    align-self: center;
+    grid-area: area-procedimento;
+    width: 90%;
+  }
+  
+  .Text-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: NaNpx 0px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      ". .";
+    justify-self: center;
+    align-self: center;
+    grid-area: Text-area;
+    width: 100%;
+    height: 60%;
+  }
+  
+  .area-medico {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50% 0px;
+    grid-auto-flow: row;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "."
+      ".";
+    justify-self: center;
+    align-self: center;
+    grid-area: area-medico;
+    width: 90%;
+  }
+
+.container-grid-index a{
+    margin-top: 5px;
+    margin-bottom: 2vh;
+}
+
+.container-grid-index button{
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 10vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #48dddd;
+    font-size: 16px;
+}
+
+  
+.tables{
+    background-color: rgb(47, 84, 195) !important;
+}
+
+.group{
+    width: 10vw;
+    background-color: rgb(82, 110, 194);
+    padding: 10px;
+}
+
+  
