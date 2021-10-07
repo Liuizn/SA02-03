@@ -28,6 +28,7 @@ rua_medicos varchar(60),
 numero_medicos varchar(10),
 complemento_medicos varchar(120),
 status_medico boolean,
+cpf varchar(14),
 data_registro_medicos date DEFAULT CURRENT_TIMESTAMP
 );
 
