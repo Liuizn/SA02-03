@@ -9,7 +9,7 @@
     justify-items: center;
     align-items: center;
     grid-template-areas:
-      ". Text-area Text-area ."
+      ". Text-area Text-area Text-area"
       "area-convenio area-paciente area-medico area-procedimento"
       "area-convenio area-paciente area-medico area-procedimento";
     height: 70vh;
