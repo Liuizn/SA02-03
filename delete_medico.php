@@ -8,7 +8,7 @@
         $exec ->bindParam(":id",$id_medico);
         $exec ->execute();
 
-        header("location: tabela_medico.php");
+        header("location: tabela_medico_POO.php");
     }
 
 ?>

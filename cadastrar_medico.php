@@ -76,7 +76,7 @@
 
         <div class="group-inputs group-buttons">
             <button id="b_index"> <a href="index.php">Voltar ao Início</a></button>
-            <button id="b_medicos"><a href="tabela_medico.php">Ver medicos</a></button>
+            <button id="b_medicos"><a href="tabela_medico_POO.php">Ver medicos</a></button>
             <input type="reset" value="Limpar" id="b_limpar">
             <input type="submit" value="Cadastrar" id="b_cadastrar">
         </div>

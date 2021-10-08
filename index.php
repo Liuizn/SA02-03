@@ -20,7 +20,7 @@
             <button> <a href="tabela_pacientes.php"> Consultar pacientes</a></button>
 
             <button> <a href="form_medico_POO.php"> Cadastrar novo medico</a></button>
-            <button> <a href="tabela_medico.php"> Consultar medico</a></button>
+            <button> <a href="tabela_medico_POO.php"> Consultar medico</a></button>
 
             <button> <a href="cadastro-proc.php"> Cadastrar novo procedimento</a></button>
             <button> <a href="lista-proc.php">Consultar Procedimento</a></button>
