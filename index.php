@@ -17,16 +17,16 @@
             <a href="tabela_convenio.php"><button class="tables">Consultar convênio</button></a>
         </div>
         <div class="area-paciente">
-            <a href="cadastrar_convenio.php"><button>Cadastrar novo convênio</button></a>
-            <a href="tabela_convenio.php"><button class="tables">Consultar convênio</button></a>
+            <a href="cadastro-proc.php"><button>Cadastrar novo procedimento</button></a>
+            <a href="lista-proc.php"><button class="tables">Consultar Procedimento</button></a>
         </div>
         <div class="area-medico">
             <a href="cadastrar.php"><button> Cadastrar novo paciente</button></a>
             <a href="tabela_pacientes.php"> <button class="tables">Consultar pacientes</button></a>
         </div>
         <div class="area-procedimento">
-            <a href="cadastrar_medico.php"> <button>Cadastrar novo medico</button></a>
-            <a href="tabela_medico.php"> <button class="tables">Consultar  medico</button></a>
+            <a href="cadastrar_medico.php"> <button>Cadastrar novo médico</button></a>
+            <a href="tabela_medico.php"> <button class="tables">Consultar  médico</button></a>
         </div>
         <div class="Text-area">
             <h1>Seja Bem Vindo a Clínica</h1>

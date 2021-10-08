@@ -1,0 +1,73 @@
+.container-grid-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em 0px;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "nome-area nome-area Data-area Data-area"
+      "Valor-Area Valor-Area Genero-Area Genero-Area"
+      "Button-Area Button-Area Button-Area Button-Area";
+    width: 100%;
+    height: 90%;
+  }
+  
+  .nome-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      ".";
+    justify-self: stretch;
+    align-self: center;
+    grid-area: nome-area;
+  }
+  
+  .Data-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: Data-area;
+  }
+
+  .Genero-Area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ".";
+    grid-area: Genero-Area;
+  }
+  
+  .Button-Area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      ". . . .";
+    justify-self: stretch;
+    grid-area: Button-Area;
+  }
+  
+  
+  .Valor-Area { grid-area: Valor-Area; }
+  

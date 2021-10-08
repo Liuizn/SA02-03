@@ -1,9 +1,13 @@
-#nome {
-    width: 50vw;
+[name="nome_procedimento"] {
+    width: 30vw;
 }
 
-.nome-c{
-    width: 25vw !important;
+[name="valor_procedimento"]{
+    width: 15vw;
+}
+
+[name= "genero"] {
+    width: 10vw;
 }
 
 #nomef{

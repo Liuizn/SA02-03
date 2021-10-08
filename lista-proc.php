@@ -5,17 +5,17 @@
 
 <body>
 
-    <h1>Consulta Pacientes</h1>
-    <div class="pai-area-formulario" id="tabela">
+    <h1>Consulta Procedimento</h1>
+    <div class="pai-tabela" id="tabela">
         <table border="1">
             <thead>
-                    <tr class="cabecalho">
-                        <td>ID</td>
-                        <td>Nome</td>
-                        <td>Valor (R$)</td>
-                        <td>Gênero</td>
-                        <td>Data de cadastro</td>
-                    </tr>
+                <tr class="cabecalho">
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td>Valor (R$)</td>
+                    <td>Gênero</td>
+                    <td>Data de cadastro</td>
+                </tr>
             </thead>
             <tbody>
                 <?php
@@ -36,11 +36,10 @@
             </tbody>
         </table>
 
-        <div class="group-inputs group-buttons">
-            <button id="b_index"> <a href="index.php">Voltar ao Início</a></button>
-            <button id="b_medicos"><a href="cadastro-proc.php">Cadastrar Procedimento</a></button>
+        <div class="display-button-table">
+            <div class="Button-Area">
+                <a href="index.php" id="b_index">Voltar ao Início</a>
+                <a href="cadastro-proc.php" id="b_medicos">Cadastrar Procedimento</a>
+            </div>
         </div>
-
     </div>
-
-

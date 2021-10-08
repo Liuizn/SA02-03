@@ -6,13 +6,11 @@
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
     text-decoration: none;
-
 }
 
 body {
     background-color: #304269;
 }
-
 
 #inicio {
     margin-top: 40vh;
@@ -25,7 +23,11 @@ h1 {
     padding: 10px;
 }
 
-.pai-area-formulario {
+table {
+    border-collapse: collapse;
+}
+
+.pai-tabela {
     margin: auto;
     width: 90%;
     height: 90%;
@@ -37,59 +39,46 @@ h1 {
     justify-content: space-between;
 }
 
-#tabela{border-radius: 3px;}
+#tabela {
+    border-radius: 3px;
+}
 
-.pai-area-formulario table {
+.pai-tabela table {
     border: 1px solid #304269;
     text-align: center;
 }
 
-.area-formulario {
-    width: 100%;
+.group p {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
 }
 
-.group-inputs {
+.Button-Area a,
+.Button-Area button,
+[type="submit"], 
+[type="reset"]{
+    border: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.display-button-table{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.group {
-    border: 2px solid white;
-    border-radius: 7px;
-    background-color: rgba(255, 34, 255, 0.133);
-    box-shadow: #333333 1px 2px 4px 1px;
-    padding: 25px;
-    margin: 10px 10px 5px 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 15%;
-}
-
-
-
-.group label {
-    font-size: 24px;
-    padding: 10px 5px 10px 5px;
-}
-
-.group input {
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px;
-    background-color: white;
-    border: 2px solid white;
+.display-button-table > .Button-Area {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
-.group p {padding: 15px; font-size: 20px; text-align: center;}
-
-.group-buttons input{
+.group-buttons input {
     border-radius: 8px;
     border: none;
     font-size: 16px;
@@ -97,31 +86,59 @@ h1 {
     width: 8%;
 }
 
-.group-buttons button{
+.group-buttons button {
     border-radius: 8px;
     border: none;
     font-size: 16px;
     padding: 10px 0px 10px 0px;
-    width: 8%;    
+    width: 8%;
 }
 
-#b_medicos {background-color: #88ced6;}
-#b_limpar {background-color: #e6d266;}
-#b_cadastrar {background-color: #f7ac67;}
-#b_index {background-color: #e27188;}
+#b_medicos {
+    background-color: #88ced6;
+}
+
+#b_limpar {
+    background-color: #e6d266;
+}
+
+#b_cadastrar {
+    background-color: #f7ac67;
+}
+
+#b_index {
+    background-color: #e27188;
+}
 
 [href] {
     color: black;
 }
 
-table{border-collapse: collapse;}
+.box-area {
+    border-radius: 12px;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 25px;
+}
 
+.box-area label,
+.box-area input,
+.box-area select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.box-area input,
+.box-area select {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
 
-
-
-
-
-
-
-
+.Data-area>.box-area {
+    text-align: center;
+    padding: 50px;
+}
