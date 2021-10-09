@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POO</title>
 </head>
+<style>
+        .cpf-f{border-color:#ff0000;
+        }
+    
+</style>
 <body>
     <?php
     require_once 'medico_POO.php';

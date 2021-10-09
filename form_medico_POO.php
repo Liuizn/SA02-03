@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POO</title>
 </head>
+
+<style>
+        .cpf-f{border-color:#ff0000;
+        }
+    
+</style>
 <body>
+    
     <h1>Insira as informações do medico</h1>
     <form action="" method="post">
 
     <label for="nome">Nome:</label>
-    <input type="text" name="nome" id="nome" required maxlength="50">
+    <input type="text" name="nome" id="nome"  maxlength="50">
     <br><br>
 
     
 
     <label for="email">E-mail:</label>
-    <input type="email" name="email" id="email" required maxlength="60">
+    <input type="email" name="email" id="email"  maxlength="60">
     <br><br>
 
     <label for="cpf">CPF:</label>
@@ -34,7 +41,7 @@
     <br><br>
 
     <label for="celular">Celular:</label>
-    <input type="tel" name="celular" id="celular" required maxlength="20" pattern="[0-9-()+ ]+$">
+    <input type="tel" name="celular" id="celular"  maxlength="20" pattern="[0-9-()+ ]+$">
     <br><br>
 
     <label for="fixo1">Telefone fixo:</label>
@@ -46,19 +53,19 @@
     <br><br>
 
     <label for="cep">Cep:</label>
-    <input type="text" name="cep" id="cep" required maxlength="9" pattern="[0-9- ]+$">
+    <input type="text" name="cep" id="cep"  maxlength="9" pattern="[0-9- ]+$">
     <br><br>
 
     <label for="bairro">Bairro:</label>
-    <input type="text" name="bairro" id="bairro" required maxlength="60">
+    <input type="text" name="bairro" id="bairro"  maxlength="60">
     <br><br>
 
     <label for="rua">Rua:</label>
-    <input type="text" name="rua" id="rua" required maxlength="60">
+    <input type="text" name="rua" id="rua"  maxlength="60">
     <br><br>
 
     <label for="numero">Número:</label>
-    <input type="text" name="numero" id="numero" required maxlength="10" pattern="[0-9]+$">
+    <input type="text" name="numero" id="numero"  maxlength="10" pattern="[0-9]+$">
     <br><br>
 
     <label for="complemento">Complemento:</label>

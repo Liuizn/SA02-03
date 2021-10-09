@@ -21,27 +21,48 @@ Class Medico{
         return $res;
     }
 
-    public function cadastrarPessoa($nome,$rua,$cpf,$status,$numero,$bairro,$cep,$complemento,$email,$celular,$fixo1,$fixo2) {
-            if ($nome != "" && $celular != "" && $email != "" && $cep != ""){
 
-            $cmd = $this->pdo->prepare("INSERT INTO medicos 
-            (nome_medicos,rua_medicos,cpf,status_medico,numero_medicos,bairro_medicos,cep_medicos,complemento_medicos,email_medicos,celular_medicos,fixo1_medicos,fixo2_medicos) 
-            VALUES 
-            (:n,:r,:c,:sm,:cm,:b,:cep,:com,:e,:tel,:fix1,:fix2)");
-            $cmd->bindValue(":n",$nome);
-            $cmd->bindValue(":r",$rua);
-            $cmd->bindValue(":c",$cpf);
-            $cmd->bindValue(":sm",$status);
-            $cmd->bindValue(":cm",$numero);
-            $cmd->bindValue(":b",$bairro);
-            $cmd->bindValue(":cep",$cep);
-            $cmd->bindValue(":com",$complemento);
-            $cmd->bindValue(":e",$email);
-            $cmd->bindValue(":tel",$celular);
-            $cmd->bindValue(":fix1",$fixo1);
-            $cmd->bindValue(":fix2",$fixo2);
-            $cmd->execute();
-            return true;
+
+    public function cadastrarPessoa($nome,$rua,$cpf,$status,$numero,$bairro,$cep,$complemento,$email,$celular,$fixo1,$fixo2) {
+        $vcpf= new Cpf();
+            if ($nome != "" && $celular != "" && $email != "" && $cep != ""){
+                if ($vcpf->validarcpf($cpf) == true) {
+                    $cmd = $this->pdo->prepare("INSERT INTO medicos 
+                    (nome_medicos,rua_medicos,cpf,status_medico,numero_medicos,bairro_medicos,cep_medicos,complemento_medicos,email_medicos,celular_medicos,fixo1_medicos,fixo2_medicos) 
+                    VALUES 
+                    (:n,:r,:c,:sm,:cm,:b,:cep,:com,:e,:tel,:fix1,:fix2)");
+                    $cmd->bindValue(":n",$nome);
+                    $cmd->bindValue(":r",$rua);
+                    $cmd->bindValue(":c",$cpf);
+                    $cmd->bindValue(":sm",$status);
+                    $cmd->bindValue(":cm",$numero);
+                    $cmd->bindValue(":b",$bairro);
+                    $cmd->bindValue(":cep",$cep);
+                    $cmd->bindValue(":com",$complemento);
+                    $cmd->bindValue(":e",$email);
+                    $cmd->bindValue(":tel",$celular);
+                    $cmd->bindValue(":fix1",$fixo1);
+                    $cmd->bindValue(":fix2",$fixo2);
+                    $cmd->execute();
+                    return true;
+
+
+
+
+
+                }
+                else{
+                    echo "<br> CPF INVALIDO";
+                    echo "<script>
+                    
+                    let el = document.getElementById('cpf');
+                    el.classList.add('cpf-f');
+                    
+                    </script>";
+                    return false;
+                }
+
+            
         } else {
             if ($nome == "") {
                 echo "<script>alert('Preencha o campo nome')</script>";
@@ -58,6 +79,8 @@ Class Medico{
             
             return false;
         }
+
+
     }
 
     public function buscar() {
@@ -69,6 +92,64 @@ Class Medico{
     }
 
     public function atualizar($id_medicos,$nome,$rua,$cpf,$status,$numero,$bairro,$cep,$complemento,$email,$celular,$fixo1,$fixo2){
+        $vcpf= new Cpf();
+        if ($nome != "" && $celular != "" && $email != "" && $cep != ""){
+            if ($vcpf->validarcpf($cpf) == true) {
+                $cmd = $this->pdo->prepare("INSERT INTO medicos 
+                (nome_medicos,rua_medicos,cpf,status_medico,numero_medicos,bairro_medicos,cep_medicos,complemento_medicos,email_medicos,celular_medicos,fixo1_medicos,fixo2_medicos) 
+                VALUES 
+                (:n,:r,:c,:sm,:cm,:b,:cep,:com,:e,:tel,:fix1,:fix2)");
+                $cmd->bindValue(":n",$nome);
+                $cmd->bindValue(":r",$rua);
+                $cmd->bindValue(":c",$cpf);
+                $cmd->bindValue(":sm",$status);
+                $cmd->bindValue(":cm",$numero);
+                $cmd->bindValue(":b",$bairro);
+                $cmd->bindValue(":cep",$cep);
+                $cmd->bindValue(":com",$complemento);
+                $cmd->bindValue(":e",$email);
+                $cmd->bindValue(":tel",$celular);
+                $cmd->bindValue(":fix1",$fixo1);
+                $cmd->bindValue(":fix2",$fixo2);
+                $cmd->execute();
+                return true;
+
+
+
+
+
+            }
+            else{
+                echo "<br> CPF INVALIDO";
+                echo "<script>
+                
+                let el = document.getElementById('cpf');
+                el.classList.add('cpf-f');
+                
+                </script>";
+                return false;
+            }
+
+        
+    } else {
+        if ($nome == "") {
+            echo "<script>alert('Preencha o campo nome')</script>";
+        }
+        else if ($celular == ""){
+            echo "<script>alert('Preencha o campo celular')</script>";
+        }
+        else if ($email == ""){
+            echo "<script>alert('Preencha o campo email')</script>";
+        }
+        else if ($cep == ""){
+            echo "<script>alert('Preencha o campo cep')</script>";
+        }
+        
+        return false;
+    }
+
+
+
         $cmd = $this->pdo->prepare("UPDATE medicos
      set nome_medicos = :n,
         celular_medicos = :c,
@@ -126,9 +207,45 @@ Class Medico{
 
     }
 
+    
 
 
 
+
+
+}
+
+
+class Cpf{
+    public function validarcpf($cpf){
+        $cpf = preg_replace('/\D/','',$cpf);
+
+
+        if (strlen($cpf) != 11) {
+            return false;
+        }
+
+        $cpfValidacao = substr($cpf,0,9);
+        $cpfValidacao .= self::calculardigitoverificador($cpfValidacao);
+        $cpfValidacao .= self::calculardigitoverificador($cpfValidacao);
+
+        return $cpfValidacao == $cpf;
+    }
+    public function calculardigitoverificador($base){
+        $tamanho = strlen($base);
+        $multiplicador = $tamanho + 1;
+
+        $soma = 0;
+
+        for($i = 0; $i<$tamanho ;$i++){
+            $soma += $base[$i] * $multiplicador;
+            $multiplicador--;
+        }
+
+
+        $resto = $soma % 11;
+        return $resto > 1 ? 11 - $resto : 0;
+    }
 
 
 }
