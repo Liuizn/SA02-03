@@ -52,7 +52,7 @@
                 }
                 else if ($key = "id_medicos") {
                     echo "<td><a href='atualizar_medico_POO.php?id_medicos=".$value."'>Editar   </a></td>";
-                    echo "<td><a href='delete_medico.php?id_medicos=".$value."'>Excluir</a></td>";
+                    echo "<td><a href='delete_medico_POO.php?id_medicos=".$value."'>Excluir</a></td>";
                 }
                 
                 

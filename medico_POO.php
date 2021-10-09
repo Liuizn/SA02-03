@@ -68,6 +68,64 @@ Class Medico{
 
     }
 
+    public function atualizar($id_medicos,$nome,$rua,$cpf,$status,$numero,$bairro,$cep,$complemento,$email,$celular,$fixo1,$fixo2){
+        $cmd = $this->pdo->prepare("UPDATE medicos
+     set nome_medicos = :n,
+        celular_medicos = :c,
+        fixo1_medicos = :f1,
+        fixo2_medicos = :f2,
+        email_medicos = :e,
+        cep_medicos = :cep,
+        bairro_medicos = :ba,
+        rua_medicos = :r,
+        numero_medicos = :num,
+        status_medico = :sm,
+        cpf = :cpf,
+        complemento_medicos = :comp where id_medicos = :id ");
+    $cmd->bindParam(":id",$id_medicos);
+    $cmd->bindParam(":n",$nome);
+    $cmd->bindParam(":c",$celular);
+    $cmd->bindParam(":f1",$fixo1);
+    $cmd->bindParam(":f2",$fixo2);
+    $cmd->bindParam(":e",$email);
+    $cmd->bindParam(":cep",$cep);
+    $cmd->bindParam(":ba",$bairro);
+    $cmd->bindParam(":r",$rua);
+    $cmd->bindParam(":num",$numero);
+    $cmd->bindParam(":sm",$status);
+    $cmd->bindParam(":cpf",$cpf);
+    $cmd->bindParam(":comp",$complemento);
+    $cmd->execute();
+    
+    header("location: tabela_medico_POO.php");
+    }
+
+    public function buscar1($id_1){
+        $res = array();
+        $cmd = $this->pdo-> prepare("SELECT * FROM medicos WHERE id_medicos = :id");
+        $cmd->bindValue("id",$id_1);
+        $cmd->execute();
+        $res = $cmd -> fetch(PDO::FETCH_ASSOC);
+        return $res;
+
+    }
+
+    public function buscarDadosPessoa($id){
+        $res = array(); // Prevenindo erros, caso não venha nada do banco, teremos um array vazio. 
+        $cmd = $this->pdo->prepare("SELECT * FROM medicos WHERE id_medicos = :id");
+        $cmd->bindValue(":id", $id);
+        $cmd->execute();
+        $res = $cmd->fetch(PDO::FETCH_ASSOC); // Para economizar memória
+        return $res;
+    }
+
+    public function deletar($id){
+        $cmd = $this->pdo->prepare("DELETE FROM medicos WHERE id_medicos = :id");
+        $cmd ->bindParam(":id",$id);
+        $cmd ->execute();
+
+    }
+
 
 
 
