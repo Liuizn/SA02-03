@@ -72,7 +72,7 @@
 
         <div class="group-inputs group-buttons">
             <button  id="b_index"><a href="index.php">Voltar ao Início</a></button>
-            <button id="b_medicos"><a href="cadastrar_medico.php">Cadastrar medico</a></button>
+            <button id="b_medicos"><a href="form_medico_POO.php">Cadastrar medico</a></button>
         </div>
     </div>
 

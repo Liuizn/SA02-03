@@ -28,7 +28,7 @@ if (isset ($_POST['nome'])){
     $inserir->bindParam(":sm",$status);
     $inserir->execute();
     
-    header("location: cadastrar_medico.php");
+    header("location: form_medico_POO.php");
 }
 
 
