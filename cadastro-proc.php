@@ -6,8 +6,6 @@
 
 <body>
     <h1>Insira as informações do procedimento</h1>
-
-
     <form action="insert-proc.php" method="post">
         <div class="container-grid-index">
             <div class=" nome-area" id="home">
@@ -47,9 +45,6 @@
             </div>
         </div>
     </form>
-
-
-
 
 </body>
 

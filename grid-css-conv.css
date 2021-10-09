@@ -1,0 +1,130 @@
+.container-grid-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2em 0em;
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "NameF-area NameF-area NameE-area NameE-area Data-area Data-area"
+        "NomeC-area NomeC-area HomeP-area HomeP-area Cnpj-area Cnpj-area"
+        "Email-area Email-area Fixo1-area Fixo1-area Fixo2-area Fixo2-area"
+        "Button-area Button-area Button-area Button-area Button-area Button-area";
+    height: 90%;
+}
+
+
+.NameF-area {
+    width: 30em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: NameF-area;
+}
+
+.NameE-area {
+    width: 30em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: NameE-area;
+}
+
+.Data-area {
+    grid-area: Data-area;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ".";
+}
+
+.NomeC-area {
+    width: 30em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: NomeC-area;
+}
+
+.HomeP-area {
+    width: 25em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: HomeP-area;
+}
+
+.Cnpj-area {
+    width: 18em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Cnpj-area;
+}
+
+.Email-area {    
+    width: 25em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: Email-area;
+}
+
+.Fixo1-area {
+    width: 16em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ".";
+    grid-area: Fixo1-area;
+}
+
+.Fixo2-area {
+    display: grid;
+    width: 16em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ".";
+    grid-area: Fixo2-area;
+}
+
+
+.Button-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      ". . . .";
+    justify-self: stretch;
+    grid-area: Button-area;
+}
+
+

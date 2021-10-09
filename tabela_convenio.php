@@ -13,8 +13,8 @@
 
     <h1>Consulta convenio</h1>
 
-    <div class="pai-area-formulario" id="tabela">
-        <table border=1>
+    <div class="pai-tabela" id="tabela">
+        <table border="1">
             <thead>
                 <tr class="cabecalho">
                     <td>ID</td>
@@ -57,9 +57,11 @@
             </tbody>
         </table>
 
-        <div class="group-inputs group-buttons">
-            <button  id="b_index"><a href="index.php">Voltar ao Início</a></button>
-            <button id="b_medicos"><a href="cadastrar_convenio.php">Cadastrar convenios</a></button>
+        <div class="display-button-table">
+            <div class="Button-Area">
+                <a href="index.php" id="b_index">Voltar ao Início</a>
+                <a id="b_medicos" href="cadastrar_convenio.php">Cadastrar convenios</a>
+            </div>
         </div>
     </div>
 

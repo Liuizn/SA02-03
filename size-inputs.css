@@ -6,37 +6,21 @@
     width: 15vw;
 }
 
-[name= "genero"] {
+[name="genero"] {
     width: 10vw;
 }
 
-#nomef{
-    width: 25vw;
+[name="nomef"],
+[name="nome"],
+[name="nome-contato"],
+[name="homepage"],
+[name="cnpj"],
+[name="email"],
+[name="fixo1"],
+[name="fixo2"]{
+    width: 100%;
 }
 
-#rua {
-    width: 25vw;
-}
-
-#numero {
-    width: 5vw;
-}
-
-#bairro {
-    width: 10vw;
-}
-
-#cep {
-    width: 10vw;
-}
-
-#complemento {
-    width: 10vw;
-}
-
-#email {
-    width: 20vw;
-}
 
 
 

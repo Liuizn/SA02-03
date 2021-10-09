@@ -69,6 +69,7 @@ table {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -141,4 +142,8 @@ table {
 .Data-area>.box-area {
     text-align: center;
     padding: 50px;
+}
+
+.box-area.nome-Conv{
+    text-align: center;
 }
