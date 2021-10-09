@@ -8,7 +8,7 @@
 </head>
 
 <style>
-        .cpf-f{border-color:#ff0000;
+        .input-f{border-color:#ff0000;
         }
     
 </style>
