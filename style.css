@@ -123,6 +123,7 @@ table {
     align-items: center;
     flex-wrap: nowrap;
     padding: 25px;
+    margin: 10px 10px 10px 10px;
 }
 
 .box-area label,

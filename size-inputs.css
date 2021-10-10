@@ -17,7 +17,13 @@
 [name="cnpj"],
 [name="email"],
 [name="fixo1"],
-[name="fixo2"]{
+[name="fixo2"],
+[name="cep"],
+[name="numero"],
+[name="rua"],
+[name="bairro"],
+[name="complemento"],
+[name="celular"]{
     width: 100%;
 }
 
