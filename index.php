@@ -25,8 +25,8 @@
             <a href="tabela_pacientes.php"> <button class="tables">Consultar pacientes</button></a>
         </div>
         <div class="area-procedimento">
-            <a href="cadastrar_medico.php"> <button>Cadastrar novo médico</button></a>
-            <a href="tabela_medico.php"> <button class="tables">Consultar  médico</button></a>
+            <a href="form_medico_POO.php"> <button>Cadastrar novo médico</button></a>
+            <a href="tabela_medico_POO.php"> <button class="tables">Consultar  médico</button></a>
         </div>
         <div class="Text-area">
             <h1>Seja Bem Vindo a Clínica</h1>

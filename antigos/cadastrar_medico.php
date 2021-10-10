@@ -59,24 +59,30 @@
 
 
         <div class="group-inputs">
-            <div class="group" id="email"> <label for="email">E-mail</label>
+            <div class="group" id="email"> 
+                <label for="email">E-mail</label>
                 <input type="email" name="email" id="email" maxlength="60">
             </div>
 
-            <div class="group" id="celular"> <label for="celular">Celular</label>
+            <div class="group" id="celular"> 
+                <label for="celular">Celular</label>
                 <input type="tel" name="celular" id="celular" required maxlength="20" pattern="[0-9-()+ ]+$">
             </div>
-            <div class="group" id="fixo1"> <label for="fixo1">Telefone fixo</label>
+
+            <div class="group" id="fixo1"> 
+                <label for="fixo1">Telefone fixo</label>
                 <input type="text" name="fixo1" id="fixo1" maxlength="20" pattern="[0-9-()+ ]+$">
             </div>
-            <div class="group" id="fixo2"> <label for="fixo2">Telefone secundario</label>
+            
+            <div class="group" id="fixo2"> 
+                <label for="fixo2">Telefone secundario</label>
                 <input type="text" name="fixo2" id="fixo2" maxlength="20" pattern="[0-9-()+ ]+$">
             </div>
         </div>
 
         <div class="group-inputs group-buttons">
             <button id="b_index"> <a href="index.php">Voltar ao Início</a></button>
-            <button id="b_medicos"><a href="tabela_medico.php">Ver medicos</a></button>
+            <button id="b_medicos"><a href="tabela_medico_POO.php">Ver medicos</a></button>
             <input type="reset" value="Limpar" id="b_limpar">
             <input type="submit" value="Cadastrar" id="b_cadastrar">
         </div>

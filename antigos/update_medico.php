@@ -40,6 +40,6 @@ if (isset ($_GET['id_medicos'])){
     $cmd->bindParam(":comp",$complemento);
     $cmd->execute();
     
-    header("location: tabela_medico.php");
+    header("location: tabela_medico_POO.php");
 }
 ?>

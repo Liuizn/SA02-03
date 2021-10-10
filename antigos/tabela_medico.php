@@ -70,11 +70,17 @@
             </tbody>
         </table>
 
+<<<<<<< HEAD:tabela_medico.php
         <div class="display-button-table">
             <div class="Button-Area">
                 <a href="index.php" id="b_index">Voltar ao Início</a></button>
                 <a id="b_medicos" href="cadastrar_medico.php">Cadastrar medico</a>
             </div>
+=======
+        <div class="group-inputs group-buttons">
+            <button  id="b_index"><a href="index.php">Voltar ao Início</a></button>
+            <button id="b_medicos"><a href="form_medico_POO.php">Cadastrar medico</a></button>
+>>>>>>> e9207e28cb783852c0425fb2384d2f6b37a14013:antigos/tabela_medico.php
         </div>
 
 </body>
