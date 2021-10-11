@@ -11,81 +11,87 @@ if(isset($_GET['id_pacientes']) && !empty($_GET['id_pacientes'])){
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid-css-paciente.css">
     <link rel="stylesheet" href="size-inputs.css">
 </head>
 
 <body>
     <h1>Atualizar informações do paciente</h1>
-    <form action="<?php echo 'update.php?id_pacientes='.$id_pacientes;?>" method="post" class="pai-area-formulario">
-
-        <div class="group-inputs nome">
-            <div class="group" id="nome">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" required maxlength="50"
-                    value="<?php if(isset($res)) { echo $res['nome'];}?>">
+    <form action="<?php echo 'update.php?id_pacientes='.$id_pacientes;?>" method="post">
+        <div class="container-grid-index">
+            <div class="Nome-area" id="nome">
+                <div class="box-area">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required maxlength="50" value="<?php if(isset($res)) { echo $res['nome'];}?>">
+                </div>
+            </div>
+            <div class="Cep-area" id="cep">
+                <div class="box-area">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" required maxlength="9" pattern="[0-9- ]+$" value="<?php if(isset($res)) { echo $res['cep'];}?>">
+                </div>
+            </div>
+            <div class="Data-area">
+                <div class="box-area">
+                    <p id="data">Data de registro</p>
+                </div>
+            </div>
+            <div class="Endereco-area" id="rua">
+                <div class="box-area">
+                    <label for="rua">Rua</label>
+                    <input type="text" name="rua" id="rua" required maxlength="60" value="<?php if(isset($res)) { echo $res['rua'];}?>">
+                </div>
+            </div>
+            <div class="Numero-area" id="numero">
+                <div class="box-area">
+                    <label for="numero">Número</label>
+                    <input type="text" name="numero" id="numero" required maxlength="10" pattern="[0-9]+$" value="<?php if(isset($res)){ echo $res['numero'];}?>">
+                </div>
+            </div>
+            <div class="Bairro-area" id="bairro">
+                <div class="box-area">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro" required maxlength="60" value="<?php if(isset($res)) { echo $res['bairro'];}?>">
+                </div>
+            </div>
+            <div class="Complemento-area" id="complemento">
+                <div class="box-area">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" id="complemento" maxlength="120" value="<?php if(isset($res)){ echo $res['complemento'];}?>">
+                </div>
+            </div>
+            <div class="Email-area" id="email">
+                <div class="box-area">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" maxlength="60" required value="<?php if(isset($res)){ echo $res['email'];}?>">
+                </div>
+            </div>
+            <div class="Celular-area" id="celular">
+                <div class="box-area">
+                    <label for="celular">Celular</label>
+                    <input type="tel" name="celular" id="celular" required maxlength="20" pattern="[0-9-()+ ]+$" value="<?php if(isset($res)){ echo $res['celular'];}?>">
+                </div>
+            </div>
+            <div class="Fixo1-area" id="fixo1">
+                <div class="box-area">
+                    <label for="fixo1">Telefone fixo</label>
+                    <input type="text" name="fixo1" id="fixo1" maxlength="20" pattern="[0-9-()+ ]+$" value="<?php if(isset($res)){ echo $res['fixo1'];}?>">
+                </div>
+            </div>
+            <div class="Fixo2-area" id="fixo2">
+                <div class="box-area">
+                    <label for="fixo2">Telefone secundario</label>
+                    <input type="text" name="fixo2" id="fixo2" maxlength="20" pattern="[0-9-()+ ]+$" value="<?php if(isset($res)){ echo $res['fixo2'];}?>">
+                </div>
             </div>
 
-            <div class="group">
-                <p id="data">Data de registro</p>
+            <div class="Button-area">
+                <a href="index.php" id="b_index">Voltar ao Início</a>
+                <a href="tabela_pacientes.php" id="b_medicos">Ver pacientes</a>
+                <input type="reset" value="Limpar" id="b_limpar">
+                <input type="submit" value="Cadastrar" id="b_cadastrar">
             </div>
         </div>
-
-
-        <div class="group-inputs">
-            <div class="group" id="rua">
-                <label for="rua">Rua</label>
-                <input type="text" name="rua" id="rua" required maxlength="60"
-                    value="<?php if(isset($res)) { echo $res['rua'];}?>">
-            </div>
-
-            <div class="group" id="numero">
-                <label for="numero">Número</label>
-                <input type="text" name="numero" id="numero" required maxlength="10" pattern="[0-9]+$"
-                    value="<?php if(isset($res)){ echo $res['numero'];}?>">
-            </div>
-
-            <div class="group" id="bairro">
-                <label for="bairro">Bairro</label>
-                <input type="text" name="bairro" id="bairro" required maxlength="60"
-                    value="<?php if(isset($res)) { echo $res['bairro'];}?>">
-            </div>
-
-            <div class="group" id="cep">
-                <label for="cep">CEP</label>
-                <input type="text" name="cep" id="cep" required maxlength="9" pattern="[0-9- ]+$"
-                    value="<?php if(isset($res)) { echo $res['cep'];}?>">
-            </div>
-            <div class="group" id="complemento">
-                <label for="complemento">Complemento</label>
-                <input type="text" name="complemento" id="complemento" maxlength="120"
-                    value="<?php if(isset($res)){ echo $res['complemento'];}?>">
-            </div>
-        </div>
-
-        <div class="group-inputs">
-            <div class="group" id="email"> <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" maxlength="60" required
-                    value="<?php if(isset($res)){ echo $res['email'];}?>">
-            </div>
-            <div class="group" id="celular"> <label for="celular">Celular</label>
-                <input type="tel" name="celular" id="celular" required maxlength="20" pattern="[0-9-()+ ]+$"
-                    value="<?php if(isset($res)){ echo $res['celular'];}?>">
-            </div>
-            <div class="group" id="fixo1"> <label for="fixo1">Telefone fixo</label>
-                <input type="text" name="fixo1" id="fixo1" maxlength="20" pattern="[0-9-()+ ]+$"
-                    value="<?php if(isset($res)){ echo $res['fixo1'];}?>">
-            </div>
-            <div class="group" id="fixo2"> <label for="fixo2">Telefone secundario</label>
-                <input type="text" name="fixo2" id="fixo2" maxlength="20" pattern="[0-9-()+ ]+$"
-                    value="<?php if(isset($res)){ echo $res['fixo2'];}?>">
-            </div>
-        </div>
-
-        <div class="group-inputs group-buttons">
-            <button id="b_medicos"><a href="tabela_pacientes.php">Ver pacientes</a></button>
-            <input type="submit" value="Atualizar" id="b_cadastrar">
-        </div>
-
     </form>
 
 </body>

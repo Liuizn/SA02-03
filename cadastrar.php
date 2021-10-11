@@ -9,14 +9,15 @@
     <form action="insert.php" method="post" class="pai-area-formulario">
 
         <div class="container-grid-index">
-            <div class="Nome-area id=" nome">
+            <div class="Nome-area" id="'nome">
                 <div class="box-area">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" required maxlength="50">
                 </div>
             </div>
             <div class="Cep-area" id="cep">
-                <div class="box-area"><label for="cep">CEP</label>
+                <div class="box-area">
+                    <label for="cep">CEP</label>
                     <input type="text" name="cep" id="cep" required maxlength="9" pattern="[0-9- ]+$">
                 </div>
             </div>
@@ -72,7 +73,7 @@
                     <label for="fixo2">Telefone secundario</label>
                     <input type="text" name="fixo2" id="fixo2" maxlength="20" pattern="[0-9-()+ ]+$">
                 </div>
-            </div>\
+            </div>
             <div class="Button-area">
                 <a href="index.php" id="b_index">Voltar ao Início</a>
                 <a href="tabela_pacientes.php" id="b_medicos">Ver pacientes</a>

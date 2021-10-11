@@ -30,7 +30,7 @@
         </div>
         <div class="Text-area">
             <h1>Seja Bem Vindo a Clínica</h1>
-            <div class="group">
+            <div class="box-area">
                 <p id="data">Data da Sessão</p>
             </div>
         </div>

@@ -48,11 +48,6 @@ table {
     text-align: center;
 }
 
-.group p {
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-}
 
 .Button-Area a,
 .Button-Area button,
@@ -79,20 +74,8 @@ table {
     justify-content: space-around;
 }
 
-.group-buttons input {
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-    padding: 10px 0px 10px 0px;
-    width: 8%;
-}
-
-.group-buttons button {
-    border-radius: 8px;
-    border: none;
-    font-size: 16px;
-    padding: 10px 0px 10px 0px;
-    width: 8%;
+.group input{
+    width: 18em;
 }
 
 #b_medicos {
