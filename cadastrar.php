@@ -9,7 +9,7 @@
     <form action="insert.php" method="post" class="pai-area-formulario">
 
         <div class="container-grid-index">
-            <div class="Nome-area id=" nome"">
+            <div class="Nome-area id=" nome">
                 <div class="box-area">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" id="nome" required maxlength="50">

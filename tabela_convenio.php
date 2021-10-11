@@ -33,27 +33,27 @@
             </thead>
             <tbody>
                 <?php
-            require_once 'conexao.php';
-            $cmd = $con->query("SELECT * FROM convenios ORDER BY id_convenio asc");
-            $res = $cmd->fetchAll(PDO::FETCH_ASSOC);
+                    require_once 'conexao.php';
+                    $cmd = $con->query("SELECT * FROM convenios ORDER BY id_convenio asc");
+                    $res = $cmd->fetchAll(PDO::FETCH_ASSOC);
 
-            foreach($res as $valor){
-                echo "<tr>";
-                echo "<td>".$valor['id_convenio']."</td>";
-                echo "<td>".$valor['nome_fantasia']."</td>";
-                echo "<td>".$valor['nome_empresa']."</td>";
-                echo "<td>".$valor['cnpj_convenio']."</td>";
-                echo "<td>".$valor['email_convenio']."</td>";
-                echo "<td>".$valor['nome_contato']."</td>";
-                echo "<td>".$valor['homepage']."</td>";
-                echo "<td>".$valor['fixo1_convenio']."</td>";
-                echo "<td>".$valor['fixo2_convenio']."</td>";
-                echo "<td>" . $valor['data_registro_convenio'] ."</td>";
-                echo "<td><a href='update-form_convenio.php?id_convenio=".$valor['id_convenio']."'>Editar</a></td>";
-                echo "<td><a href='delete_convenio.php?id_convenio=".$valor['id_convenio']."'>Excluir</a><td>";
-                echo "</tr>";
-            }
-        ?>
+                    foreach($res as $valor){
+                        echo "<tr>";
+                        echo "<td>".$valor['id_convenio']."</td>";
+                        echo "<td>".$valor['nome_fantasia']."</td>";
+                        echo "<td>".$valor['nome_empresa']."</td>";
+                        echo "<td>".$valor['cnpj_convenio']."</td>";
+                        echo "<td>".$valor['email_convenio']."</td>";
+                        echo "<td>".$valor['nome_contato']."</td>";
+                        echo "<td>".$valor['homepage']."</td>";
+                        echo "<td>".$valor['fixo1_convenio']."</td>";
+                        echo "<td>".$valor['fixo2_convenio']."</td>";
+                        echo "<td>" . $valor['data_registro_convenio'] ."</td>";
+                        echo "<td><a href='update-form_convenio.php?id_convenio=".$valor['id_convenio']."'>Editar</a></td>";
+                        echo "<td><a href='delete_convenio.php?id_convenio=".$valor['id_convenio']."'>Excluir</a><td>";
+                        echo "</tr>";
+                    }
+                ?>
             </tbody>
         </table>
 
