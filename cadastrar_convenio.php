@@ -6,18 +6,18 @@
 
 <body>
     <h1>Insira as informações do Convênio</h1>
-    <form action="insert_convenio.php" method="post">
+    <form action="" method="post">
         <div class="container-grid-index">
             <div class="NameF-area" id="nomef">
                 <div class="box-area nome-Conv" id="nomef">
                     <label for="nomef">Nome Fantasia</label>
-                    <input type="text" name="nomef" id="nomef" required maxlength="50">
+                    <input type="text" name="nomef" id="nomef"  maxlength="50">
                 </div>
             </div>
             <div class="NameE-area" id="nome">
                 <div class="box-area nome-Conv" id="nome">
-                    <label for="nome">Nome Empresa</label>
-                    <input type="text" name="nome" id="nome"  required maxlength="50">
+                    <label for="nome">Nome da Empresa</label>
+                    <input type="text" name="nome" id="nome"  maxlength="50">
                 </div>
             </div>
             <div class="Data-area">
@@ -28,7 +28,7 @@
             <div class="NomeC-area" id="nome-contato">
                 <div class="box-area" id="nome-contato">
                     <label for="nome-contato">Nome do Contato</label>
-                    <input type="text" name="nome-contato" id="nome-contato" required maxlength="60">
+                    <input type="text" name="nome-contato" id="nome-contato"  maxlength="60">
                 </div>
             </div>
             <div class="HomeP-area" id="homepage">
@@ -40,7 +40,7 @@
             <div class="Cnpj-area" id="cnpj">
                 <div class="box-area" id="cnpj">
                     <label for="cnpj">CNPJ</label>
-                    <input type="text" name="cnpj" id="cnpj" required maxlength="50">
+                    <input type="text" name="cnpj" id="cnpj"  maxlength="50">
                 </div>
             </div>
             <div class="Email-area" id="email">
@@ -82,5 +82,20 @@
 </script>
 
 <?php
-require_once "conexao.php"
+require_once "convenio_POO.php";
+
+if (isset($_POST['nome'])) {
+    $nomef = addslashes($_POST['nomef']);
+    $nomee = addslashes($_POST['nome']);
+    $nomec = addslashes($_POST['nome-contato']);
+    $cnpj = addslashes($_POST['cnpj']);
+    $email = addslashes($_POST['email']);
+    $homepage = addslashes($_POST['homepage']);
+    $fixo1 = addslashes($_POST['fixo1']);
+    $fixo2 = htmlspecialchars($_POST['fixo2']);
+}
+
+$convenio = new Convenio("localhost", "agencia_estetica", "root", "");
+$convenio->cadastrarConvenio($nomef, $nomee, $nomec, $cnpj, $email, $homepage, $fixo1, $fixo2);
+
 ?>
