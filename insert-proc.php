@@ -15,5 +15,5 @@ if (isset ($_POST['nome_procedimento'])){
     $inserir->bindParam(":g",$genero);
     $inserir->execute();
     
-    header("location: lista-proc.php");
+    header("location: tabela-procedimento.php");
 }

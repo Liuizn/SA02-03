@@ -18,10 +18,10 @@
         </div>
         <div class="area-paciente">
             <a href="cadastro-proc.php"><button>Cadastrar novo procedimento</button></a>
-            <a href="lista-proc.php"><button class="tables">Consultar Procedimento</button></a>
+            <a href="tabela-procedimento.php"><button class="tables">Consultar Procedimento</button></a>
         </div>
         <div class="area-medico">
-            <a href="cadastrar.php"><button> Cadastrar novo paciente</button></a>
+            <a href="cadastro-paciente.php"><button> Cadastrar novo paciente</button></a>
             <a href="tabela_pacientes.php"> <button class="tables">Consultar pacientes</button></a>
         </div>
         <div class="area-procedimento">

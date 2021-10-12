@@ -1,4 +1,5 @@
 <?php
+
 class Convenio
 {
     public $pdo;
