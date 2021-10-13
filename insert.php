@@ -26,7 +26,7 @@ if (isset ($_POST['nome'])){
     $inserir->bindParam(":comp",$complemento);
     $inserir->execute();
     
-    header("location: cadastrar.php");
+    header("location: cadastro-paciente.php");
 }
 
 

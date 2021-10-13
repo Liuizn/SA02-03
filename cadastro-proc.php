@@ -39,7 +39,7 @@
             </div>
             <div class="Button-Area">
                 <a href="index.php" id="b_index">Voltar ao Início</a>
-                <a href="lista-proc.php" id="b_medicos">Ver Procedimentos</a>
+                <a href="tabela-procedimento.php" id="b_medicos">Ver Procedimentos</a>
                 <input type="reset" value="Limpar" id="b_limpar">
                 <input type="submit" value="Cadastrar" id="b_cadastrar">
             </div>

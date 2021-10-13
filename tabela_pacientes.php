@@ -64,7 +64,7 @@
         <div class="display-button-table">
             <div class="Button-Area">
                 <a href="index.php" id="b_index">Voltar ao Início</a>
-                <a href="cadastrar.php" id="b_medicos">Cadastrar pacientes</a>
+                <a href="cadastro-paciente.php" id="b_medicos">Cadastrar pacientes</a>
             </div>
         </div>
     </div>

@@ -2,6 +2,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid-css-paciente.css">
     <link rel="stylesheet" href="size-inputs.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
                     <input type="text" name="nome" id="nome" required maxlength="50">
                 </div>
             </div>
-            <div class="Cep-area" id="cep">
+            <div class="Cep-area">
                 <div class="box-area">
                     <label for="cep">CEP</label>
                     <input type="text" name="cep" id="cep" required maxlength="9" pattern="[0-9- ]+$">
@@ -26,19 +27,19 @@
                     <p id="data">Data de registro</p>
                 </div>
             </div>
-            <div class="Endereco-area" id="rua">
+            <div class="Endereco-area">
                 <div class="box-area">
                     <label for="rua">Endereço</label>
                     <input type="text" name="rua" id="rua" required maxlength="60">
                 </div>
             </div>
-            <div class="Numero-area" id="numero">
+            <div class="Numero-area">
                 <div class="box-area">
                     <label for="numero">Número</label>
                     <input type="text" name="numero" id="numero" required maxlength="10" pattern="[0-9]+$">
                 </div>
             </div>
-            <div class="Bairro-area" id="bairro">
+            <div class="Bairro-area">
                 <div class="box-area">
                     <label for="bairro">Bairro</label>
                     <input type="text" name="bairro" id="bairro" required maxlength="60">
@@ -94,6 +95,24 @@
     data.innerHTML = `Data de registro: ${str_data}`
 </script>
 
+<script type="text/javascript">
+        $("#cep").focusout(function () {
+            $.ajax({
+                url: 'https://viacep.com.br/ws/' + $(this).val() + '/json/unicode/',
+
+                dataType: 'json',
+
+                success: function (resposta) {
+
+                    $("#rua").val(resposta.logradouro);
+                    $("#complemento").val(resposta.complemento);
+                    $("#bairro").val(resposta.bairro);
+                    $("#cidade").val(resposta.localidade);
+                    $("#numero").focus();
+                }
+            });
+        });
+    </script>
 <?php
 require_once "conexao.php"
 ?>
