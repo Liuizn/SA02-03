@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #304269;
+    background-color: #121317;
 }
 
 #inicio {
@@ -32,7 +32,7 @@ table {
     width: 90%;
     height: 90%;
     border-radius: 10px;
-    background-color: #bfddf6;
+    background-color: #7874a7;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@ table {
 }
 
 .pai-tabela table {
-    border: 1px solid #304269;
+    border: 1px solid #000;
     text-align: center;
 }
 
@@ -79,19 +79,19 @@ table {
 }
 
 #b_medicos {
-    background-color: #88ced6;
+    background-color: #52c1ce;
 }
 
 #b_limpar {
-    background-color: #e6d266;
+    background-color: #e2ca41;
 }
 
 #b_cadastrar {
-    background-color: #f7ac67;
+    background-color: #e08836;
 }
 
 #b_index {
-    background-color: #e27188;
+    background-color: #c3435c;
 }
 
 [href] {
@@ -100,7 +100,7 @@ table {
 
 .box-area {
     border-radius: 12px;
-    background-color: crimson;
+    background-color: #BEC7C7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,4 +132,8 @@ table {
     text-align: center;
 }
 .input-f{border-color:#ff0000;
+}
+
+#datee{
+   background: #3e668d;
 }

@@ -1,5 +1,5 @@
-create database if not exists agencia_estetica;
-use agencia_estetica;
+# create database if not exists agencia_estetica;
+# use agencia_estetica;
 create table if not exists pacientes(
 id_pacientes int(6) not null auto_increment primary key,
 nome varchar(50) not null,
@@ -12,7 +12,7 @@ bairro varchar(60),
 rua varchar(60),
 numero varchar(10),
 complemento varchar(120),
-data_registro date DEFAULT CURRENT_TIMESTAMP
+data_registro date
 );
 
 create table if not exists medicos(
@@ -29,7 +29,7 @@ numero_medicos varchar(10),
 complemento_medicos varchar(120),
 status_medico boolean,
 cpf varchar(14),
-data_registro_medicos date DEFAULT CURRENT_TIMESTAMP
+data_registro_medicos date
 );
 
 create table if not exists procedimentos(
@@ -37,7 +37,7 @@ id_procedimento int(6) not null auto_increment primary key,
 nome_procedimento varchar(50) not null,
 valor_procedimento varchar(20) not null,
 genero varchar(20),
-data_procedimento date DEFAULT CURRENT_TIMESTAMP
+data_procedimento date
 );
 
 create table if not exists convenios(
@@ -50,7 +50,7 @@ fixo1_convenio varchar(20),
 fixo2_convenio varchar(20),
 email_convenio varchar(60) not null,
 homepage varchar(60) not null,
-data_registro_convenio date DEFAULT CURRENT_TIMESTAMP
+data_registro_convenio date
 );
 
 # select * from pacientes;

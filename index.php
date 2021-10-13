@@ -30,7 +30,7 @@
         </div>
         <div class="Text-area">
             <h1>Seja Bem Vindo a Clínica</h1>
-            <div class="box-area">
+            <div class="box-area" id="datee">
                 <p id="data">Data da Sessão</p>
             </div>
         </div>
